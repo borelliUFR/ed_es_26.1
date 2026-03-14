@@ -8,7 +8,7 @@ O objetivo é centralizar os conteúdos trabalhados em sala de aula e nas ativid
 ## Informações da Disciplina
 
 - **Instituição:** Universidade Federal de Rondonópolis (UFR)
-- **Curso:** Bacharelado em Sistemas de Informação
+- **Curso:** Bacharelado em Engenharia de Software
 - **Disciplina:** Estruturas de Dados
 - **Professor:** Helberth Borelli
 - **Carga Horária:** 64h (40h presenciais + 24h EAD)
