@@ -10,12 +10,12 @@
 int main() {
 
     int opcao;
-
-    printf("1 - Novo cadastro\n");
-    printf("2 - Consultar\n");
-    printf("3 - Sair\n");
     
     do {
+        printf("1 - Novo cadastro\n");
+        printf("2 - Consultar\n");
+        printf("3 - Sair\n");
+
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
 
