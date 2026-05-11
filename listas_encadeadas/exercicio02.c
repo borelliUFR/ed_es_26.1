@@ -8,6 +8,45 @@ typedef struct reg {
                       // ainda nao foi finalizado pelo compilador
 } celula;
 
+int conta_elementos(celula *le) {
+    int cont = 0;
+    celula *p = le;
+
+    while (p != NULL) {
+        cont += 1;
+        p = p->prox;
+    }
+    return cont;
+}
+
+int conta_altura(int x, celula *le) {
+    int cont = 0;
+    celula *p = le;
+
+    while (p != NULL) {
+        if (p->conteudo == x || cont > 0)
+            cont += 1;
+        p = p->prox;
+    }
+
+    return cont;
+}
+
+int conta_profundidade(int x, celula *le) {
+    int cont = 0;
+    celula *p = le;
+
+    while (p != NULL)
+    {
+        if (p->conteudo == x)
+            return cont;
+        
+        cont += 1;
+        p = p->prox;
+    }
+    
+}
+
 int main() {
 
     // 1. Inicialização dos ponteiros
@@ -54,6 +93,15 @@ int main() {
         atual = atual->prox;
     }
     printf("NULL\n");
+
+    // contando o números de elementos na lista
+    printf("O número de elementos é %d.\n", conta_elementos(lista));
+
+    // contado a altura
+    printf("O número de elementos é %d.\n", conta_altura(70, lista));
+
+    // contando profundidade
+    printf("O número de elementos é %d.\n", conta_profundidade(70, lista));
 
     return 0;
 }
