@@ -70,7 +70,7 @@ celula *busca02(int x, celula *le) {
         return p;
     else {
         printf("Valor %d não está na lista!\n", x);
-        return NULL;
+        // return NULL;
     }
 }
 
@@ -167,7 +167,7 @@ int main() {
 
     // Teste de Busca
     int valor_busca = 50;
-    celula *bi = busca_interativa(valor_busca, le);
+    celula *bi = busca_recursiva(valor_busca, le);
     if (bi != NULL) {
         printf("Busca: Valor %d encontrado no endereco %p\n", bi->conteudo, (void*)bi);
     }
