@@ -25,7 +25,7 @@ celula *cria_lista_com_cabeca(int n) {
     return le;
 }
 
-/* Busca Interativa para lista com nó cabeça */
+/* Busca iterativa para lista com nó cabeça */
 celula *busca_com_cabeca(int x, celula *le) {
     // Começamos a busca na primeira célula útil (pós-cabeça)
     celula *p = le->prox; 

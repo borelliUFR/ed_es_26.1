@@ -90,7 +90,7 @@ int ordem_crescente(celula *le) {
 }
 
 /* Percorre a lista nó por nó em busca do valor x */
-celula *busca_interativa(int x, celula *le) {
+celula *busca_iterativa(int x, celula *le) {
     celula *p = le;
     while (p != NULL) {
         if (p->conteudo == x) return p;
@@ -129,7 +129,7 @@ int menor_valor_recursivo(celula *le) {
 }
 
 /* Compara duas listas simultaneamente usando iteração */
-int compara_listas_interativa(celula *l1, celula *l2) {
+int compara_listas_iterativa(celula *l1, celula *l2) {
     while (l1 != NULL && l2 != NULL) {
         if (l1->conteudo != l2->conteudo) return 0;
         l1 = l1->prox;

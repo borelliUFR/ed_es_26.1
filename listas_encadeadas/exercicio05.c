@@ -29,7 +29,7 @@ celula* insere_sem_cabeca(int x, celula *ini) {
     return nova;      // O novo início agora é a nova célula
 }
 
-celula* copia_interativa(celula *lst) {
+celula* copia_iterativa(celula *lst) {
     celula *nova_lista = NULL, *ultimo = NULL;
     for (celula *p = lst; p != NULL; p = p->prox) {
         celula *novo = (celula*) malloc(sizeof(celula));
@@ -50,7 +50,7 @@ celula* copia_recursiva(celula *lst) {
     return novo;
 }
 
-void concatena_interativa(celula *l1, celula *l2) {
+void concatena_iterativa(celula *l1, celula *l2) {
     if (l1 == NULL) return; 
     celula *p = l1;
     while (p->prox != NULL) p = p->prox;
