@@ -72,13 +72,13 @@ typedef struct NoRB {
 O projeto está estruturado em arquivos fonte separados para facilitar a modularização. Certifique-se de ter um compilador compatível com o padrão C99 (como gcc) instalado.
 
 Estrutura de Arquivos Recomendada
-
+```c
 ├── avl.h
 ├── avl.c
 ├── red_black.h
 ├── red_black.c
 └── main.c
-
+```
 ---
 
 ## 6. Considerações de Projeto
